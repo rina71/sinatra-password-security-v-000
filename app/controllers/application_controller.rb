@@ -31,15 +31,15 @@ class ApplicationController < Sinatra::Base
 	end
 
 	post "/login" do
-		#your code here!
-	end
-
-	get "/success" do
 		if logged_in?
 			erb :success
 		else
 			redirect "/login"
 		end
+	end
+
+	get "/success" do
+		
 	end
 
 	get "/failure" do
