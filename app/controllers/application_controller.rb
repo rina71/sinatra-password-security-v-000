@@ -41,7 +41,7 @@ class ApplicationController < Sinatra::Base
 	end
 
 	get "/success" do
-
+		erb :success
 	end
 
 	get "/failure" do
